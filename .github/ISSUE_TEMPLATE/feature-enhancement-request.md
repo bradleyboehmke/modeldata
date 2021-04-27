@@ -21,7 +21,7 @@ A clear and concise description of any alternative solutions or features you've 
 
 ### Known Dependencies
 
-What additional dependencies are required to make this happen? Are there additional R or OS packages required.  Would new data sources need to be added to ACDS?  Consider all requirements involved with this capability.
+What additional dependencies are required to make this happen? Are there additional Python or OS packages required.  Would new data sources need to be curated?  Consider all requirements involved with this capability.
 
 ### Desired Completion Date
 

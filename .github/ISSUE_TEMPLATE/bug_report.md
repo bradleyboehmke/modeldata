@@ -13,10 +13,7 @@ A clear and concise description of what the bug is. Please include direct error 
 
 ### To Reproduce
 
-Be sure to include:
-- Spark container specs
-- Spark configuration settings
-- and a small, concise, reproducible example of the code that resulted in the bug.
+Be sure to include a small, concise, reproducible example of the code that resulted in the bug.
 
 ### Expected behavior
 
@@ -28,10 +25,9 @@ If applicable, add screenshots to help explain your problem. This may include sn
 
 ### Compute Environment:
 
-- Azure/Databricks
-- GCP Agatha
-- On-prem Agatha
-- On-prem HAM/LOU servers
+- Local OS (Mac, Windows, Ubuntu)
+- Cloud environment (Azure, GCP, AWS, Databricks)
+- Other
 
 ### Additional context
 
