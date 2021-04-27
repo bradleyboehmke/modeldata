@@ -1,4 +1,4 @@
-name: Validate 'modeldata'
+name: Tests
 
 on: [push]
 

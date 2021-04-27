@@ -1,6 +1,7 @@
 <!-- badges: start -->
 ![](https://img.shields.io/badge/version-0.1.0-blue.svg)
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![tests](https://github.com/bradleyboehmke/modeldata/actions/workflows/package-ci.yaml/badge.svg)](https://github.com/bradleyboehmke/modeldata/actions)
 <!-- badges: end -->
 
 `modeldata` contains various data sets useful for teaching machine learning. The package serves as a sister package to the R [`modeldata`](https://github.com/tidymodels/modeldata) package and is designed to make comparisons across languages easily accessible.
