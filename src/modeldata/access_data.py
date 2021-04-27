@@ -4,12 +4,12 @@ Available functions:
 - available_datasets: Lists all available data sets provided by modeldata.
 - load_dataset: Load a data set of interest.
 """
-
-import os
 import glob
+import os
 from typing import List
-from pandas import read_csv
+
 from pandas import DataFrame
+from pandas import read_csv
 from pkg_resources import resource_filename
 
 
@@ -23,7 +23,7 @@ def available_datasets() -> List[str]:
     """
     path = os.path.join(os.path.dirname(__file__), "data")
     os.chdir(path)
-    available_csv_files = glob.glob('*.csv')
+    available_csv_files = glob.glob("*.csv")
     available_datasets = [os.path.splitext(file)[0] for file in available_csv_files]
     return available_datasets
 

@@ -3,9 +3,7 @@ from .access_data import available_datasets
 from .access_data import load_dataset
 
 
-__author__ = (
-    "Brad Boehmke"
-)
+__author__ = "Brad Boehmke"
 __email__ = "bradleyboehmke@gmail.com"
 __version__ = "0.1.0"
 
