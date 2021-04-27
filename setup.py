@@ -4,7 +4,7 @@ from setuptools import find_packages
 from setuptools import setup
 
 
-install_requires = []
+install_requires = ["pandas"]
 doc_requires = [
     "nbsphinx",
     "recommonmark",
@@ -13,7 +13,7 @@ doc_requires = [
     "sphinxcontrib.napoleon",
 ]
 test_requires = ["pytest"]
-dev_requires = ["black", "flake8", "mypy"] + doc_requires + test_requires
+dev_requires = ["black", "flake8", "mypy", "pre-commit"] + doc_requires + test_requires
 
 setup(
     name="modeldata",
@@ -29,6 +29,7 @@ setup(
     install_requires=install_requires,
     extras_require={"docs": doc_requires, "tests": test_requires, "dev": dev_requires},
     test_suite="tests",
+    package_data={'src/modeldata': ['data/*.csv']},
     include_package_data=True,
     project_urls={
         "Source": "https://github.com/bradleyboehmke/modeldata",
