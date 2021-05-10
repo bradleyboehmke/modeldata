@@ -21,10 +21,11 @@ def available_datasets() -> List[str]:
     -------
     Names of all available data sets.
     """
-    path = os.path.join(os.path.dirname(__file__), "data")
-    os.chdir(path)
-    available_csv_files = glob.glob("*.csv")
-    available_datasets = [os.path.splitext(file)[0] for file in available_csv_files]
+    path = resource_filename("modeldata", "data")
+    available_csv_files = glob.glob(f"{path}/*.csv")
+    available_datasets = [
+        os.path.splitext(os.path.basename(file))[0] for file in available_csv_files
+    ]
     return available_datasets
 
 
