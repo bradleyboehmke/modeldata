@@ -15,7 +15,9 @@ def test_available_datasets():
     )
     os.chdir(path)
     available_csv_files = glob.glob("*.csv")
-    actual_datasets = [os.path.splitext(file)[0] for file in available_csv_files]
+    actual_datasets = sorted(
+        [os.path.splitext(file)[0] for file in available_csv_files]
+    )
     assert available_datasets() == actual_datasets
 
 

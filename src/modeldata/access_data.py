@@ -26,7 +26,7 @@ def available_datasets() -> List[str]:
     available_datasets = [
         os.path.splitext(os.path.basename(file))[0] for file in available_csv_files
     ]
-    return available_datasets
+    return sorted(available_datasets)
 
 
 def load_dataset(name: str) -> DataFrame:
