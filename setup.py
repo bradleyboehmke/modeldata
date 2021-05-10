@@ -29,7 +29,7 @@ setup(
     install_requires=install_requires,
     extras_require={"docs": doc_requires, "tests": test_requires, "dev": dev_requires},
     test_suite="tests",
-    package_data={"src/modeldata": ["data/*.csv"]},
+    package_data={"modeldata": ["data/*.csv"]},
     include_package_data=True,
     project_urls={
         "Source": "https://github.com/bradleyboehmke/modeldata",
