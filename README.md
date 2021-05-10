@@ -8,18 +8,68 @@
 
 ## Installation
 
-Illustrate how to get up and running with modeldata...
+Get up and running with modeldata with:
+
+```bash
+pip install git+https://github.com/bradleyboehmke/modeldata.git
+```
 
 ## Basic Usage
 
-Provide an example of basic usage of modeldata...
+You can see all available data sets with:
+
+```python
+>>> from modeldata import available_datasets
+
+>>> available_datasets()
+['ad_data',
+ 'ames',
+ 'attrition',
+ 'biomass',
+ 'car_prices',
+ 'cells',
+ 'check_times',
+ 'chicago',
+ 'concrete',
+ 'covers',
+ 'credit_data',
+ 'crickets',
+ 'drinks',
+ 'hpc_cv',
+ 'hpc_data',
+ 'lending_club',
+ 'meats',
+ 'mlc_churn',
+ 'oils',
+ 'okc',
+ 'okc_text',
+ 'parabolic',
+ 'pathology',
+ 'pd_speech',
+ 'penguins',
+ 'sacramento',
+ 'scat',
+ 'smithsonian',
+ 'solubility_test',
+ 'stackoverflow',
+ 'two_class_dat',
+ 'two_class_example',
+ 'wa_churn']
+```
+
+And you can load any of these data sets as a Pandas DataFrame with:
+
+```python
+>>> from modeldata import load_dataset
+
+>>> ames = load_dataset('ames')
+>>> type(ames)
+pandas.core.frame.DataFrame
+
+>>> ames.shape
+(2930, 74)
+```
 
 ## Bugs & Enhancements
 
-Your feedback allows us to make better tools. Please report any problems, bugs, or ideas for enhancement. You can report issues at:
-
-TBD
-
-## Contributing
-
-TBD
+Your feedback allows us to make better tools. Please report any problems, bugs, or ideas for enhancement. You can report issues [here](https://github.com/bradleyboehmke/modeldata/issues).
